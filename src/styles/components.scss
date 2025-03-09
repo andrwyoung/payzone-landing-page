@@ -6,7 +6,7 @@
 // If .section are surrounded by a .multi-section class, make even sections have a flex direction of row-reverse
 .multi-section {
 
-  & > .section:nth-child(even):not(.custom-position) .row {
+  & > .section:nth-child(odd):not(.custom-position) .row {
     @apply md:flex-row-reverse;
   }
 
