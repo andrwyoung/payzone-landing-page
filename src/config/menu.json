@@ -14,17 +14,17 @@
       "hasChildren": true,
       "children": [
         {
-          "name": "Changelog",
-          "url": "/changelog"
+          "name": "Zero Cost Processing",
+          "url": "/surcharge"
         },
         {
-          "name": "Does not exist",
-          "url": "/does-not-exist"
+          "name": "B2B Processing",
+          "url": "/b2b"
         },
 
         {
-          "name": "Neither does this",
-          "url": "/neither-does-this"
+          "name": "Lending Solutions",
+          "url": "/lending"
         }
       ]
     },

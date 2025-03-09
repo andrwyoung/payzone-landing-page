@@ -32,7 +32,7 @@ const TestimonialSlider = ({ list }) => {
         // }}
         modules={[Pagination, Autoplay]}
         autoplay={{
-          delay: 1500, // Change slide every 3 seconds
+          delay: 3000, // Change slide every 3 seconds
           disableOnInteraction: true// Keeps autoplay even after user interaction
         }}
         loop={true}

@@ -75,10 +75,23 @@ const image_position_classes = (() => {
         }
       </div>
       {
-        image && image_position != "top" && (
+        image && image_position != "top" && image_position != "right" && (
           <div class={`${image_position_classes[2]}`}>
             <Image
               class="w-full hidden md:block object-contain"
+              alt="section-image"
+              src={image}
+              width={500}
+              height={333}
+            />
+          </div>
+        )
+      }
+      {
+        image && image_position == "right" && (
+          <div class={`${image_position_classes[2]}`}>
+            <Image
+              class="w-full hidden xl:block object-contain opacity-0"
               alt="section-image"
               src={image}
               width={500}

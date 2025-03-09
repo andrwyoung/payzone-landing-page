@@ -2,66 +2,62 @@
 # Does not contain meta customizations because it is the homepage and config is already set in the config file
 
 banner:
-  title: 'An <span class="text-accent text-shadow-[0px_5px_15px] shadow-accent/10">Astro</span> Starter <span class="text-secondary"> batteries-included</span>'
+  title: '<span class="text-accent">Smarter</span> <span class="text-primary">Payments Seamless Growth.</span>'
   title_size: "text-4xl md:text-6xl"
-  content: "A fully responsive astro starter repo, ideal for simple (yet laborious) content-driven pages or landings."
-  image: /images/logo_v5_xl_pfp.webp
+  content: "Expert guidance and modern solutions to simplify payments, improve cash flow, and support your business at every stage."
+  image: /images/bg.jpg
+  image_position: right
   buttons:
-    - label: Get the Code
-      href: "https://github.com/diego-alfadev/alfadev-astro-starter"
-      target: "_blank"
-      icon: _GitHub
-      addClasses: "w-full bg-gray-900 text-white hover:bg-accent dark:border-white/10 dark:border"
+    - label: Talk to an Expert
+      href: "/contact"
+      icon: phone
+      addClasses: "justify-center bg-accent max-w-xl text-white text-lg hover:bg-laccent shadow-md dark:border-white/10 dark:border"
 
 sections:
-  - title: Tired of writing the same code over and over again?
-    content: "We've all been there... Setting up the same SEO, theming, and responsive layout boilerplate again and again. Say goodbye to that! <b class='text-accent'>alfadev-astro-starter</b> lets you jump straight into creating, skipping the repetitive groundwork."
+  - title: Maximize Profits, Minimize Costs
+    content: Save thousands annually with <b class="text-accent">Zero Cost Processing—pay 0%</b> on all credit card transactions. Accept payments in-person, online, and in-office with seamless processing and <b class="text-primary">flat-rate pricing</b> that keeps more money in your pocket.
     image: /images/tired-of-writing.webp
 
-  - title: This is not a library
-    content: It's a <b class='text-accent'>ready-to-go template</b>. No steep learning curves or dozens of new dependencies. Just the essentials to build content-driven pages with ease.<br/>If you're familiar with <span class="text-accent font-bold">Astro</span>, you are good to go.
+  - title: Faster Funding, Better Cash Flow
+    content: Get paid within hours, <b class="text-accent">7 days a week—even on weekends</b> and holidays—with True Daily Funding. No more waiting days for payouts—speed up invoice payments, <b class="text-primary">cover expenses faster</b>, and improve cash flow efficiency.
     image: /images/this-is-not-a-library.webp
 
-  - title: Optimized out of the box
-    content: Lightweight and fast. Packed with <span class="text-accent font-bold">Astro</span>, <span class="text-[#38bdf8] font-bold">tailwind</span> and <span class="text-[#e41c81] font-bold">Sass</span> goodness, so your pages load <b class='text-accent'>blazing fast</b>—right from the start. <br/> All the pages are configured in a way that are SEO-friendly and defined with markdown.
+  - title: Smarter Payments with Cutting-Edge Tech
+    content: Converge delivers <b class="text-accent">omni-commerce payments</b> for in-store, online, mobile, and phone orders. Accept credit, debit, gift cards, and mobile wallets like Apple Pay, handle recurring payments, and <b class="text-primary">reduce fraud risk</b> with secure data protection.
     image: /images/optimized-out-of-the-box.webp
-
-  - title: Looks great, day or night
-    content: "With <b class='text-accent'>built-in dark theme support</b>, your site will look amazing no matter what time of day your users visit. Or what their eyes prefer.<br/> <br/>Forget convoluted theming systems. alfadev-astro-starter keeps it <b class='text-accent'>simple and extensible</b>, so you can focus on your design and let the code work fori you."
-    image: /images/loogs-good.webp
 
 ##key features
 features:
-  title: Why <span class="text-accent">alfadev-starter</span>?
-  description: Because every content-driven page needs a lot boilerplate to initialize, and **we provide you with the tools and guidelines** needed to focus on what's important.
+  title: <span class="text-accent">Industry-Specific</span> Payment Solutions
+  description: Tailored payment processing for **every industry**, boosting efficiency, reducing costs, and enhancing customer experiences
   feature_list:
-    - icon: "box" #icon package react-feather-icon [https://feathericons.com/]
-      title: Simple
-      content: Avoid Complexity, small yet not useless. Loaded, but <b class="text-text">not overwhelming</b>.
-    - icon: "clock" #icon package react-feather-icon [https://feathericons.com/]
-      title: Up-to-date
-      content: Using the latest version and best practices of <span class="text-accent font-bold">Astro</span>, <span class="text-[#38bdf8] font-bold">tailwindcss</span> and <span class="text-[#e41c81] font-bold">Sass</span>
-    - icon: "search" #icon package react-feather-icon [https://feathericons.com/]
-      title: SEO Friendly
-      content: Boost your site's visibility with <b class="text-text">built-in SEO optimizations</b>, including automatic sitemap generation using <a target='blank' href="https://docs.astro.build/es/guides/integrations-guide/sitemap/"><span class="text-accent font-bold underline">astrojs/sitemap</span></a>.
-    - icon: "user" #icon package react-feather-icon [https://feathericons.com/]
-      title: Extendable
-      content: Add or change content just by <b class="text-text">editing markdown files</b>, so it stays in one place regardless of the code.
+    - icon: "package" #icon package react-feather-icon [https://feathericons.com/]
+      title: Retail
+      content: Boost sales with secure, customizable POS solutions that adapt to any store layout and ensure seamless transactions.
     - icon: "coffee" #icon package react-feather-icon [https://feathericons.com/]
-      title: "Focused"
-      content: Put you effort on what's important, not on small details. Dont worry about <span class="text-shadow-sm shadow-surface-contrast">***that damn shadow***</span>.
-    - icon: "tool" #icon package react-feather-icon [https://feathericons.com/]
-      title: Customizable
-      content: Every corner of the page <b class="text-text">can be easily changed</b> to fit your needs.
-    - icon: "moon" #icon package react-feather-icon [https://feathericons.com/]
-      title: Dark Mode Support
-      content: Fully supports ***dark theme*** with an easy-to-extend theming system.
+      title: Restaurants
+      content: Speed up service and increase repeat business with secure POS systems, mobile ordering, and loyalty-driven rewards programs.
+    - icon: "user" #icon package react-feather-icon [https://feathericons.com/]
+      title: Hospitality
+      content: Deliver a frictionless guest experience with integrated payment solutions for hotels, restaurants, retail shops, and services.
+    - icon: "activity" #icon package react-feather-icon [https://feathericons.com/]
+      title: Medical
+      content: Simplify billing and improve cash flow with seamless POS and ACH payment solutions tailored for healthcare providers.
+    - icon: "cpu" #icon package react-feather-icon [https://feathericons.com/]
+      title: B2B
+      content: Cut costs and improve efficiency with lower interchange rates for corporate, government, and purchasing card transactions.
+    - icon: "book" #icon package react-feather-icon [https://feathericons.com/]
+      title: Education
+      content: Make tuition and fee payments effortless with flexible, budget-friendly processing solutions for schools and universities.
+    - icon: "briefcase" #icon package react-feather-icon [https://feathericons.com/]
+      title: Government
+      content: Securely manage high-volume transactions with fraud prevention, global e-commerce support, and payment flexibility.
     - icon: "feather" #icon package react-feather-icon [https://feathericons.com/]
-      title: Lightweight
-      content: Fast and efficient. Every asset is optimized to ensure <b class="text-text">minimal load times</b>.
-    - icon: "layers" #icon package react-feather-icon [https://feathericons.com/]
-      title: Modular
-      content: Built with ***reusable components*** that simplify adding or editing sections of the page.
+      title: Non-Profit
+      content: Increase donor retention and contributions with easy online donation processing and recurring giving options.
+    - icon: "tool" #icon package react-feather-icon [https://feathericons.com/]
+      title: Services
+      content: Accept payments anywhere with mobile, virtual, and invoicing solutions that make billing fast, easy, and secure.
 
 #testimonial
 testimonial:
@@ -104,10 +100,11 @@ testimonial:
 
 ## Call to Action
 call_to_action:
-  title: "Because we love <span class='text-accent text-shadow-[0px_5px_15px]' >Astro</span> and <span class='text-[#38bdf8] text-shadow-[0px_5px_15px]'>Tailwind</span>."
-  description: "Save yourself some time (and sanity). Use this template and act like you planned everything from scratch. We won't tell. **Just be sure to leave a star, please.**"
+  title: "Let’s Find the Right Payment Solution  <span class='text-secondary'>for You</span>."
+  description: Every business is different. Let’s talk about <b>your needs</b> and build a payment strategy that works for you.
   button:
-    label: "Grab the Starter"
-    href: "https://github.com/diego-alfadev/alfadev-astro-starter"
+    label: "Schedule a Free Consultation"
+    href: "/contact"
     color: accent
+    # class: "btn lg:block bg-accent shadow-lg m-5  max-w-sm  h-10 px-5 text-lg text-white hover:bg-laccent text-center dark:border-white/10 dark:border"
 ---

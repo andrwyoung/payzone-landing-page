@@ -13,8 +13,17 @@ const call_to_action = homepage.data.call_to_action;
 ---
 
 <Base>
+  <!-- Background Image (Moved Out of Stack) -->
+  <div class="hidden lg:block absolute inset-0 -z-10 diagonal-bg">
+    <img
+      src="/images/bg2.jpg"
+      class="w-full h-full object-cover"
+      alt="Background Image"
+    />
+  </div>
+
   <!-- banner -->
-  <section class="sm:m-20 lg:mb-3 animate-fade-in">
+  <section class="sm:m-20 lg:my-25 animate-fade-in">
     <Section section={banner} />
   </section>
   <!-- testimonial -->
