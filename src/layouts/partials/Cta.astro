@@ -16,7 +16,10 @@ const { title, description, button } = Astro.props;
             <h2 class="h1 text-text" set:html={markdownify(title)} />
             {
               button && (
-                <LinkButton {...button} addClasses="mt-8 text-xl shadow-lg" />
+                <LinkButton
+                  {...button}
+                  addClasses="mt-8 text:lg sm:text-xl shadow-lg"
+                />
               )
             }
           </div>
