@@ -5,11 +5,11 @@ $colors: ("secondary", "accent", "danger", "success", "warning", "info");
 
 
 .btn {
-  @apply cursor-pointer rounded-[50px] h-[52px] px-8 py-2 text-sm font-medium leading-[36px] transition-all duration-200 flex flex-row items-center justify-center hover:shadow-[0px_5px_15px] hover:shadow-slate-500/60;
+  @apply cursor-pointer rounded-[50px] h-[52px] px-8 py-2 text-sm font-medium leading-[36px] transition-all duration-200 flex flex-row items-center justify-center hover:shadow-slate-500/60;
   &-primary {
     @extend .btn;
     @extend .bg-gradient-primary;
-    @apply border-0 text-center font-medium text-white hover:shadow-[0px_5px_30px] hover:shadow-primary;
+    @apply border-0 text-center font-medium text-white hover:shadow-primary;
     &-outline {
       @extend .btn;
       @apply border border-text text-text bg-transparent;
@@ -22,7 +22,7 @@ $colors: ("secondary", "accent", "danger", "success", "warning", "info");
     &-#{$color} {
       @extend .btn;
 
-      @apply bg-none border-0 text-white font-medium hover:shadow-[0px_5px_30px] hover:shadow-#{$color}/50 bg-#{$color}; // Error here does not break the build and the styles are applied correctly
+      @apply bg-none border-0 text-white font-medium  hover:shadow-#{$color}/50 bg-#{$color}; // Error here does not break the build and the styles are applied correctly
       &-outline {
         @extend .btn;
         @apply border border-text text-text bg-transparent;

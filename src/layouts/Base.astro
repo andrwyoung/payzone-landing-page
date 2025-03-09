@@ -13,7 +13,7 @@ import { getEntry } from "astro:content";
 import type { PageType } from "@/content/page.types";
 import type { ContentEntryMap } from "astro:content";
 
-const GTAG = import.meta.env.GTAG_ID
+const GTAG = import.meta.env.GTAG_ID;
 
 // font families
 const pf = theme.fonts.font_family.primary;
@@ -175,14 +175,17 @@ const _noindex =
     />
 
     <!-- Google tag (gtag.js) -->
-    <script async src={"https://www.googletagmanager.com/gtag/js?id="+GTAG}></script>
-    <script type="text/javascript" define:vars={{GTAG}}>
+    <script async src={"https://www.googletagmanager.com/gtag/js?id=" + GTAG}
+    ></script>
+    <script type="text/javascript" define:vars={{ GTAG }}>
       // Pasamos la variable GTAG_ID al navegador como una variable global
       window.GTAG_ID = GTAG;
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', window.GTAG_ID);
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", window.GTAG_ID);
     </script>
 
     <!-- title -->
@@ -226,28 +229,16 @@ const _noindex =
     />
 
     <!-- twitter-title -->
-    <meta
-      name="twitter:title"
-      content={plainify(_title)}
-    />
+    <meta name="twitter:title" content={plainify(_title)} />
 
     <!-- twitter-description -->
-    <meta
-      name="twitter:description"
-      content={plainify(_description)}
-    />
+    <meta name="twitter:description" content={plainify(_description)} />
 
     <!-- og-image -->
-    <meta
-      property="og:image"
-      content={`${config.site.base_url}${_image}`}
-    />
+    <meta property="og:image" content={`${config.site.base_url}${_image}`} />
 
     <!-- twitter-image -->
-    <meta
-      name="twitter:image"
-      content={`${config.site.base_url}${_image}`}
-    />
+    <meta name="twitter:image" content={`${config.site.base_url}${_image}`} />
     <meta name="twitter:card" content="summary_large_image" />
     <script is:inline>
       const setTheme = () => {
@@ -279,7 +270,7 @@ const _noindex =
     </script>
   </head>
   <body class="transition-colors duration-500">
-    <TwSizeIndicator />
+    <!-- <TwSizeIndicator /> -->
     <Header />
     <main id="main-content">
       <slot />

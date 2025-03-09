@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "alfadev-astro-starter",
+    "title": "Payzone Systems",
     "base_url": "https://astro-starter.alfadev.io",
     "base_path": "/",
     "trailing_slash": false,
@@ -8,16 +8,17 @@
     "logo": "/images/logo.png",
     "logo_width": "47",
     "logo_height": "47",
-    "logo_text": "alfadev-astro-starter"
+    "logo_text": "Payzone Systems"
   },
 
   "params": {
-    "footer_description": "Building cool things, one line of code (and a lot of coffee) at a time. Got questions? Or just bored? Reach out!",
-    "email": "diego.alfadev@gmail.com",
-    "location": "Somewhere on Earth, where the Wi-Fi is decent and the coffee is strong.",
-    "phone": "+704-555-0127 (but let's be honest, email is faster)",
+    "footer_description": "Payzone Systems, LLC, is a registered MSP/ISO of Elavon, Inc. Georgia, a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN",
+    "email": "support@payzonesystems.com",
+    "location": "533 Airport Blvd, Suite 400 Burlingame, CA 94010",
+    "phone_sales": "+888-639-1088",
+    "phone_office": "+650-396-2700",
     "contact_form_action": "#",
-    "copyright": "Copyright © 2023 proudly crafted by [AlfaDev](https://github.com/diego-alfadev)"
+    "copyright": "Copyright © 2025 Payzone Systems"
 },
 
   "metadata": {

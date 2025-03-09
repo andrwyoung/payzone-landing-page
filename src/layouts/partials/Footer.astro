@@ -6,24 +6,31 @@ import menu from "@/config/menu.json";
 import social from "@/config/social.json";
 import { markdownify } from "@/lib/utils/textConverter";
 const { footer } = menu;
-const { copyright, location, email, phone, footer_description } = config.params;
+const {
+  copyright,
+  location,
+  email,
+  phone_sales,
+  phone_office,
+  footer_description,
+} = config.params;
 
 const has_social = Object.entries(social).some(
   ([key, value]) => key != "title" && value
 );
 ---
 
-<footer class="footer border-t border-border mx-4">
+<footer class="footer border-t border-border bg-primary text-white">
   <div class="container">
-    <div class="gx-5 row pb-10 pt-[52px]">
+    <div class="gx-5 row flex justify-center pb-10 pt-[15px]">
       <div class="col-12 mt-12 md:col-6 lg:col-3">
-        <Logo />
+        <img src="/images/logo.png" />
         <p class="mt-6">
           {footer_description}
         </p>
         <p class="mt-6" set:html={markdownify(copyright)} />
       </div>
-      {
+      <!-- {
         has_social && (
           <>
             <div class="col-12 mt-12 md:col-6 lg:col-3">
@@ -36,7 +43,7 @@ const has_social = Object.entries(social).some(
                 {footer.map((item, i) => (
                   <li class={footer.length - 1 === i ? "mb-0" : "mb-4"}>
                     <a
-                      class="hover:text-primary hover:underline "
+                      class="hover:text-laccent hover:underline "
                       href={item.url}
                     >
                       {item.name}
@@ -47,19 +54,49 @@ const has_social = Object.entries(social).some(
             </div>
           </>
         )
-      }
+      } -->
       <div class="col-12 mt-12 md:col-6 lg:col-3">
-        <h6>Location & Contact</h6>
+        <h5 class="mb-3">Quick Links:</h5>
+        <ul>
+          {
+            footer.map((item, i) => (
+              <li class={footer.length - 1 === i ? "mb-0" : "mb-2"}>
+                <a class="hover:text-accent hover:underline " href={item.url}>
+                  {item.name}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div class="col-12 mt-12 md:col-6 lg:col-3">
+        <h5 class="mb-3">Contact:</h5>
         <ul>
           <li class="mb-2">{location}</li>
           <li class="mb-2">
-            <a class="mb-2 hover:text-primary" href={`mailto:${email}`}>
+            <a
+              class="mb-2 text-white hover:text-accent"
+              href={`mailto:${email}`}
+            >
               {email}
             </a>
           </li>
           <li>
-            <a class="hover:text-primary hover:underline" href={`tel:${phone}`}>
-              {phone}
+            Sales:
+            <a
+              class="text-white hover:text-accent hover:underline"
+              href={`tel:${phone_sales}`}
+            >
+              {phone_sales}
+            </a>
+          </li>
+          <li>
+            Office:
+            <a
+              class="text-white hover:text-accent hover:underline"
+              href={`tel:${phone_office}`}
+            >
+              {phone_sales}
             </a>
           </li>
         </ul>

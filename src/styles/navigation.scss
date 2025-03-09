@@ -13,11 +13,11 @@ input#nav-toggle:checked ~ #nav-menu {
 .header {
   flex-direction: row;
   --shadow-color: rgba(99, 99, 99, 0.3);
-  --bg: rgba(255, 255, 255, 0.565);
-  animation: reduce-header linear both;
-  animation-timeline: scroll();
-  animation-range: 0 150px;
-  @apply sticky top-0 z-50 transition-all duration-300 py-6;
+  // --bg: rgba(255, 255, 255, 0.565);
+  // animation: reduce-header linear both;
+  // animation-timeline: scroll();
+  // animation-range: 0 150px;
+  @apply sticky top-0 z-50 transition-all duration-300 py-3;
 }
 
 .dark .header {
@@ -27,11 +27,11 @@ input#nav-toggle:checked ~ #nav-menu {
 
 @keyframes reduce-header {
   100% {
-    padding-block: 1rem;
+//     padding-block: 1rem;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     box-shadow: 0 5px 50px -5px var(--shadow-color), 0 0 3px 1px var(--shadow-color);
-    background-color: var(--bg)
+//     background-color: var(--bg)
   }
 }
 
@@ -53,7 +53,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .nav-link {
-  @apply block p-3 py-2 text-xl md:text-base text-text transition hover:text-secondary md:px-2 lg:inline-block;
+  @apply block p-3 py-2 text-lg md:text-white text-white transition hover:text-accent md:px-2 lg:inline-block;
 
   &.active {
     @apply relative;
@@ -69,7 +69,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .nav-dropdown-list {
-  @apply z-10 mx-auto ml-1 mt-4 max-w-[300px] rounded-lg border-0 border-solid  border-white/10 bg-primary/5 px-4 py-3 hidden shadow-sm duration-300  lg:mt-0 lg:border lg:bg-surface lg:shadow-[0_0.9rem_1.56rem_rgb(0,0,0,0.1)];
+  @apply z-10 mx-auto ml-1 mt-2 max-w-[300px] rounded-lg bg-primary/5 px-4 py-3 hidden shadow-sm duration-300  lg:mt-0 lg:bg-surface lg:shadow-[0_0.9rem_1.56rem_rgb(0,0,0,0.1)];
   @apply mx-auto hidden duration-300 lg:invisible lg:absolute lg:block lg:h-auto lg:w-[13.5rem] lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100;
 }
 
@@ -93,5 +93,5 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .nav-dropdown-link {
-  @apply min-w-[150px] py-1 text-base font-medium transition hover:text-secondary text-text;
+  @apply min-w-[150px] py-1 text-base font-medium transition hover:text-accent text-white;
 }

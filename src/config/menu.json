@@ -5,19 +5,11 @@
       "url": "/"
     },
     {
-      "name": "Features",
-      "url": "/features"
-    },
-    {
-      "name": "Theme",
+      "name": "Products",
       "url": "/theme"
     },
     {
-      "name": "About",
-      "url": "/about"
-    },
-    {
-      "name": "Pages",
+      "name": "Solutions",
       "url": "",
       "hasChildren": true,
       "children": [
@@ -33,30 +25,19 @@
         {
           "name": "Neither does this",
           "url": "/neither-does-this"
-        },
-        {
-          "name": "Nope, not this one either",
-          "url": "/nope-not-this-one-either"
-        },
-        {
-          "name": "What about this?",
-          "url": "/what-about-this"
-        },
-        {
-          "name": "Come on, this one must exist",
-          "url": "/come-on-this-one-must-exist"
-        },
-        {
-          "name": "Do you expect this to exist?",
-          "url": "/do-you-expect-this-to-exist"
         }
       ]
+    },
+
+    {
+      "name": "Contact",
+      "url": "/about"
     }
   ],
 
   "footer": [
     {
-      "name": "About",
+      "name": "Contact",
       "url": "/about"
     },
     {
