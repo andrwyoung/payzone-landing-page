@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Payzone Systems",
-    "base_url": "https://astro-starter.alfadev.io",
+    "base_url": "https://payzonesystems.netlify.app",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.ico",
@@ -22,10 +22,10 @@
 },
 
   "metadata": {
-    "meta_author": "alfadev",
+    "meta_author": "Payzone Systems",
     "meta_image": "/images/logo.png",
-    "meta_description": "alfadev-astro-starter is a starter template for Astro, the modern static site generator for the modern web.",
-    "meta_keywords": ["astro", "Astro Starter", "alfadev", "Diego Alfaro Sáez", "static site generator", "modern web", "astro template"],
-    "meta_application_name": "alfadev-astro-starter"
+    "meta_description": "Payzone Systems provides tailored payment solutions for businesses of all sizes. Reduce processing fees, streamline transactions, and enhance cash flow with secure, scalable, and cost-effective payment processing.",
+    "meta_keywords": ["payment processing", "merchant services", "credit card processing", "POS systems", "online payments", "secure transactions", "business payment solutions", "Elavon MSP"],
+    "meta_application_name": "payzone-landing-page"
   }
 }
