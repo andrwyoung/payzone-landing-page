@@ -6,6 +6,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
 
 const TestimonialSlider = ({ list }) => {
   SwiperCore.use([Pagination]);
@@ -24,8 +26,16 @@ const TestimonialSlider = ({ list }) => {
         onSwiper={(swiper) => {
           setSwiper(swiper);
         }}
-        // loop={true}
+        // navigation={{
+        //   nextEl: ".custom-next",
+        //   prevEl: ".custom-prev",
+        // }}
         modules={[Pagination, Autoplay]}
+        autoplay={{
+          delay: 1500, // Change slide every 3 seconds
+          disableOnInteraction: true// Keeps autoplay even after user interaction
+        }}
+        loop={true}
         slidesPerView={1}
         breakpoints={{
           992: {
@@ -36,6 +46,14 @@ const TestimonialSlider = ({ list }) => {
           },
         }}
       >
+  {/* <button className="custom-prev absolute left-0 top-1/2 z-20 transform -translate-y-1/2 bg-primary text-white w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-900">
+    ‹
+  </button>
+  <button className="custom-next absolute right-0 top-1/2 z-20 transform -translate-y-1/2 bg-primary text-white w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-900">
+    ›
+  </button> */}
+
+
         {list.map((item, i) => (
           <SwiperSlide key={"feature-" + i}>
             <div className="review">
@@ -46,7 +64,7 @@ const TestimonialSlider = ({ list }) => {
               <p className="mb-4 text-[#666]">{item.organization}</p>
               <p dangerouslySetInnerHTML={{__html: markdownify(item.content)}}/>
               <div
-                className={`review-rating mt-6 flex items-center justify-center space-x-2.5 ${item.rating}  `}
+                className={`review-rating mt-2 flex items-center justify-center space-x-2.5 ${item.rating}  `}
               >
                 <Star />
                 <Star />

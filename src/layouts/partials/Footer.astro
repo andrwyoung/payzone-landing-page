@@ -20,7 +20,7 @@ const has_social = Object.entries(social).some(
 );
 ---
 
-<footer class="footer border-t border-border bg-primary text-white">
+<footer class="footer border-t border-border bg-primary shadow-md text-white">
   <div class="container">
     <div class="gx-5 row flex justify-center pb-10 pt-[15px]">
       <div class="col-12 mt-12 md:col-6 lg:col-3">
@@ -61,7 +61,10 @@ const has_social = Object.entries(social).some(
           {
             footer.map((item, i) => (
               <li class={footer.length - 1 === i ? "mb-0" : "mb-2"}>
-                <a class="hover:text-accent hover:underline " href={item.url}>
+                <a
+                  class="text-white hover:text-accent hover:underline "
+                  href={item.url}
+                >
                   {item.name}
                 </a>
               </li>
@@ -75,7 +78,7 @@ const has_social = Object.entries(social).some(
           <li class="mb-2">{location}</li>
           <li class="mb-2">
             <a
-              class="mb-2 text-white hover:text-accent"
+              class="mb-2 text-accent hover:text-accent"
               href={`mailto:${email}`}
             >
               {email}
@@ -84,7 +87,7 @@ const has_social = Object.entries(social).some(
           <li>
             Sales:
             <a
-              class="text-white hover:text-accent hover:underline"
+              class="text-accent hover:text-accent hover:underline"
               href={`tel:${phone_sales}`}
             >
               {phone_sales}
@@ -93,10 +96,10 @@ const has_social = Object.entries(social).some(
           <li>
             Office:
             <a
-              class="text-white hover:text-accent hover:underline"
+              class="text-accent hover:text-accent hover:underline"
               href={`tel:${phone_office}`}
             >
-              {phone_sales}
+              {phone_office}
             </a>
           </li>
         </ul>

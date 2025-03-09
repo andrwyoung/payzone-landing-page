@@ -231,7 +231,7 @@
   & option {
     @apply text-text dark:text-text-contrast;
   }
-  @apply h-[60px] w-full rounded-lg border-surface-contrast/50 text-text placeholder:text-text focus:border-primary focus:ring-transparent bg-transparent;
+  @apply h-[40px] w-full rounded-lg border-surface-contrast/50 text-text placeholder:text-text focus:border-primary focus:ring-transparent bg-transparent;
 }
 
 .form-inputs * {

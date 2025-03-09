@@ -1,5 +1,4 @@
 ---
-
 import { markdownify } from "@/lib/utils/textConverter";
 /**
  *
@@ -12,7 +11,7 @@ interface Props {
     title: string;
     images: string[];
   };
-  cols?: number
+  cols?: number;
 }
 const { gallery, cols = 2 }: Props = Astro.props;
 const grid_cols = `col-${12 / cols}`;
@@ -31,7 +30,7 @@ const { title, images } = gallery;
       <div class="row" id="photo-gallery">
         {
           images.map((image: any) => (
-            <div class={`picture-item ${grid_cols} mt-12`}>
+            <div class={`picture-item ${grid_cols} mt-2`}>
               {" "}
               <img class="w-full" src={image} alt="" />
             </div>

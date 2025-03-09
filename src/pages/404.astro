@@ -15,8 +15,10 @@ const { Content } = await entry.render();
     <div class="container">
       <div class="flex h-[40vh] items-center justify-center">
         <div class="flex flex-col items-center">
-          <Logo showText={false} />
-          <h1 class="mb-4" set:html={markdownify(entry.data.title)} />
+          <h1
+            class="mb-4 text-primary"
+            set:html={markdownify(entry.data.title)}
+          />
           <Content />
         </div>
       </div>
